@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideShift Navigator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/sidebar.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body class="bg-gray-100">
+    <custom-navbar></custom-navbar>
+    <custom-sidebar></custom-sidebar>
+    <main class="ml-0 md:ml-64 transition-all duration-300 p-4 pt-20">
+        <div class="max-w-6xl mx-auto bg-white rounded-lg shadow p-6">
+            <h1 class="text-3xl font-bold text-gray-800 mb-6">Welcome to SideShift</h1>
+            <p class="text-gray-600 mb-4">This is your main content area. The responsive sidebar will adjust based on screen size.</p>
+            <button id="toggleSidebar" class="md:hidden bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">
+                Toggle Sidebar
+            </button>
+        </div>
+    </main>
+    <custom-footer></custom-footer>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
